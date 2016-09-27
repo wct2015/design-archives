@@ -3,65 +3,45 @@
 //----------------------------------------------------------------------------
 // Color
 //----------------------------------------------------------------------------
-// primary
-$colorBase          : #333333;
-$colorSub           : #555555;
-$colorLink          : #24279f;
+$colorBlue          : #334f7a;
+$colorDeepBlue      : #0b346e;
+$colorGold          : #aa7a40;
+$colorBlack         : #000;
+$colorGray          : #555;
+$colorGrayLight     : #ccc;
+
+$colorBg            : #f0f1f2;
+$colorText          : $colorGray;
+$colorLink          : $colorBlue;
 $colorLinkHover     : lighten($colorLink, 15%);
-$colorSelection     : $colorLink;
+$colorSelection     : lighten($colorLink, 20%);
 
 //----------------------------------------------------------------------------
 // Path
 //----------------------------------------------------------------------------
-$filePath           : "../images/";
+$filePath           : '/docs/images/';
 
 //----------------------------------------------------------------------------
 // Typography
 //----------------------------------------------------------------------------
-// primary
-$fontFamily         : "Helvetica Neue", "Helvetica", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック","MS PGothic",Arial,Sans-Serif;
+// Primary
+$fontFamily         : 'Avenir Next', 'Avenir', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック','MS PGothic',Arial,Sans-Serif;
 // En
-$fontFamilyEn       : "Helvetica Neue", "Helvetica",Sans-Serif;
-// code
+$fontEn             : 'Avenir Next', 'Avenir',Sans-Serif;
+// Page title
+$fontTitle          : 'Cormorant Garamond', serif;
+// Count
+$fontCount          : 'Parisienne', cursive;
+// Code
 $fontFamilyCode     : Menlo,Consolas,Courier,sans-serif;
-
-//----------------------------------------------------------------------------
-// Styles
-//----------------------------------------------------------------------------
-$baseRadius: 4px;
 
 //----------------------------------------------------------------------------
 // Block size
 //----------------------------------------------------------------------------
-// $containerWidth: ;
+$contentWidth       : 880px;
 $maxWidth           : 1280px;
 
 //----------------------------------------------------------------------------
 // Navigation size
 //----------------------------------------------------------------------------
-// $headerHeight      : ;
-// $menuHeight        : $headerHeight;
-// $menuItemWidth     : ;
-// $menuItemHeight    : ;
-// $menuPadding       : ($menuHeight - $menuItemHeight) / 2; // Calclate padding size automatically
-
-//----------------------------------------------------------------------------
-// WordPress
-//----------------------------------------------------------------------------
-
-$include-wp-editor-styles: true;
-$include-wp-tinymce-styles: false;
-$include-wp-specific-classes: true;
-
-// editor styles
-$wp-editor-margin: 20px 0;
-
-// caption
-$wp-caption-margin: rem-calc(15);
-$wp-caption-text-font-size: rem-calc(12);
-
-// gallery
-$wp-gallery-margin: rem-calc(15);
-
-// alignment
-$wp-align-margin: rem-calc(15);
+$menuItemHeight    : 50px;

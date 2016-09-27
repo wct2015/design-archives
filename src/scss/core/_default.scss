@@ -13,10 +13,9 @@ html {
 body {
   background-color: #fff;
   background-repeat: no-repeat;
-  color: $colorBase;
   word-wrap: break-word;
   font-family: $fontFamily;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -55,25 +54,13 @@ a {
 }
 p {
   margin-bottom: 1.125em;
-  color: $colorBase;
   &:last-child{
     margin-bottom: 0;
-  }
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: $fontFamily;
-  &,
-  & > a {
-    color: $colorBase;
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
 ::selection {
   background: transparent;
   background-color: $colorSelection;
-  color: $colorBase;
 }
 .fa {
   display: inline-block;
