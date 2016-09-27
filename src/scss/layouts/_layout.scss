@@ -4,15 +4,9 @@
 /* layout
 /* -------------------------------------------------------------- */
 .l-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  position: relative;
+  background-image: url($filePath + 'bg_wapuu.png');
+  background-size: vmin-calc(350px) auto;
+  background-position: 98px 20px;
+  background-repeat: no-repeat;
 }
-.l-header {
-}
-.l-footer {
-}
-.l-main {
-}
-.l-primary {}
-.l-sidebar {}

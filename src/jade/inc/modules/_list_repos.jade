@@ -1,7 +1,10 @@
-ul
-  - for (var i = 0; i < 10; i++)
-    li
-      img(src='/docs/images/img_folder.png')
-      p FOLDER
-      p クリアファイル
-      p Updated at 2016-09-12
+.s-repos
+  ul.s-repos__list
+    - for (var i = 0; i < 10; i++)
+      li.s-repos__item
+        .s-repos__thumb
+          img(src='/docs/images/img_folder.png')
+        .s-repos__content
+          p.s-repos__name FOLDER
+          p.s-repos__description クリアファイル
+          p.s-repos__date Updated at 2016-09-12

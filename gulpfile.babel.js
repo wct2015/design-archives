@@ -23,7 +23,7 @@ import './gulp/tasks';
 // Sass
 //---------------------------------------------------------------------------
 gulp.task('sass', () => {
-  return gulp.src(paths.scssPath + '**/*.scss')
+  return gulp.src(paths.scssPath + '*.scss')
     .pipe(sourcemaps.init())
     .pipe(cssGlobbing({ extensions: ['.scss'] }))
     .pipe(sass(sassConf).on('error', sass.logError))

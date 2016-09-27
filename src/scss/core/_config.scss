@@ -31,7 +31,7 @@ $fontEn             : 'Avenir Next', 'Avenir',Sans-Serif;
 // Page title
 $fontTitle          : 'Cormorant Garamond', serif;
 // Count
-$fontCount          : 'Parisienne', cursive;
+$fontCount          : 'Caveat', cursive;
 // Code
 $fontFamilyCode     : Menlo,Consolas,Courier,sans-serif;
 
@@ -40,6 +40,9 @@ $fontFamilyCode     : Menlo,Consolas,Courier,sans-serif;
 //----------------------------------------------------------------------------
 $contentWidth       : 880px;
 $maxWidth           : 1280px;
+// Ccaluclate vmin to px
+// @see _functions.scss
+$base-v-size        : 375px;
 
 //----------------------------------------------------------------------------
 // Navigation size

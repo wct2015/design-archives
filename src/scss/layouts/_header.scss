@@ -3,4 +3,14 @@
 /* -------------------------------------------------------------- */
 /* header
 /* -------------------------------------------------------------- */
-.l-header {}
+.l-header {
+  background-image: url($filePath + 'bg_topbar.png');
+  background-repeat: repeat-x;
+  background-size: auto 10px;
+  padding: 20px 15px 0 15px;
+  &__description {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    margin: 0;
+  }
+}

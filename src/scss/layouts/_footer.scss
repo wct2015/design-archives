@@ -3,4 +3,14 @@
 /* -------------------------------------------------------------- */
 /* footer
 /* -------------------------------------------------------------- */
-.l-footer {}
+.l-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  &__copy {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+}

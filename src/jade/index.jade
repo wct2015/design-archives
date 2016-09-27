@@ -13,15 +13,16 @@ block append meta
 block body
   .l-container
     include inc/layouts/_header
-    h1
-      img(src='/docs/images/logo.svg', alt='Design Archives WordCamp Tokyo 2015')
-    ul
-      li
-        a(href='')
-          img(src='/docs/images/icon_fb.svg', alt='Share with Facebook')
-      li
-        a(href='')
-          img(src='/docs/images/icon_tw.svg', alt='Tweet')
+    .s-hero
+      h1.s-hero__title
+        img(src='/docs/images/logo.svg', alt='Design Archives WordCamp Tokyo 2015')
+      ul.s-hero__list
+        li
+          a(href='')
+            img(src='/docs/images/icon_fb.svg', alt='Share with Facebook')
+        li
+          a(href='')
+            img(src='/docs/images/icon_tw.svg', alt='Tweet')
     include inc/modules/_list_repos
     include inc/layouts/_footer
 block append scriptFooter
