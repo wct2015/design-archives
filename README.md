@@ -55,12 +55,12 @@ If you like to run gulp with proxy mode, edit below this line in `./gulp/config.
 ```
 
 ## File structure
-Basically source file placed in `src/`. It passed to `assets/` as destination through some gulp tasks.
+Basically source file placed in `src/`. It passed to `docs/` as destination through some gulp tasks.
 ~~~~
 .
 ├── LICENSE.md
 ├── README.md
-├── assets
+├── docs
 │   └── index.html
 ├── bin
 │   ├── foundation.sh

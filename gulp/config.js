@@ -6,19 +6,19 @@
 export const paths = {
   'root'           : './',
 // html
-  'htmlDest'       : 'assets/',
+  'htmlDest'       : 'docs/',
 // images
-  'imageDest'      : 'assets/images/',
+  'imageDest'      : 'docs/images/',
   'imagePath'      : 'src/images/',
 // jade
   'jadePath'       : 'src/jade/',
 // JavaScript
   'jsPath'         : 'src/js/',
-  'jsDest'         : 'assets/js/',
+  'jsDest'         : 'docs/js/',
 // scss
   'scssPath'       : 'src/scss/',
 // css
-  'cssDest'        : 'assets/css/'
+  'cssDest'        : 'docs/css/'
 };
 
 export const options = {

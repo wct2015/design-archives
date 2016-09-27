@@ -18,7 +18,7 @@ build_dist
 # ---------------------------------- #
 # function build_yourtheme() {
 #   mkdir yourtheme
-#   cp -rpf assets yourtheme/
+#   cp -rpf docs yourtheme/
 #   cp -rpf languages yourtheme/
 #   cp -rpf inc yourtheme/
 #   cp -rpf template-parts yourtheme/
