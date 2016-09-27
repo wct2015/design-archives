@@ -4,13 +4,13 @@
 /* hero
 /* -------------------------------------------------------------- */
 .s-hero {
-  padding: 0 15px;
-  padding-top: 13vh;
-  padding-bottom: 10.6vh;
+  padding: 0 vmin-calc(15px);
+  padding-top: vmin-calc(100px);
+  padding-bottom: vmin-calc(108px);
   &__title {
     margin-bottom: 36px;
     img {
-      width: 180px;
+      width: vmin-calc(180px);
       height: auto;
     }
   }
