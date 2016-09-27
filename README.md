@@ -1,7 +1,7 @@
 Design Archives
 ============
 
-Products list of GitHub Repository for [WordCamp Tokyo 2015](https://2015.tokyo.wordcamp.org/) by Design Team
+Design Archives is GitHub repository list of the organization [WordCamp Tokyo 2015](https://2015.tokyo.wordcamp.org/).
 
 ### Requires
 - [Node.js](https://nodejs.org/en/)
