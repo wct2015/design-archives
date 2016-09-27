@@ -1,7 +1,7 @@
 Design Archives
 ============
 
-Products for WordCamp Tokyo 2015 by Design Team
+Products list of GitHub Repository for [WordCamp Tokyo 2015](https://2015.tokyo.wordcamp.org/) by Design Team
 
 ### Requires
 - [Node.js](https://nodejs.org/en/)
