@@ -18,4 +18,10 @@ gulp.task('watch', () => {
   gulp.watch([paths.scssPath  + '**/*.scss'], ['sass']);
 });
 
-gulp.task('default', [ 'watch', 'browserSync' ]);
+gulp.task('default', [
+  'jade',
+  'sass',
+  'bundle:js',
+  'watch',
+  'browserSync'
+]);
