@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
     <title>icon_menu</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="index" transform="translate(-177.000000, -619.000000)" fill="#FFFFFF">
+    <g id="mobile" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="index" transform="translate(-177.000000, -619.000000)">
             <g id="button_menu" transform="translate(163.000000, 602.000000)">
                 <path d="M14,29 L36,29 L36,31 L14,31 L14,29 Z M14,23 L36,23 L36,25 L14,25 L14,23 Z M14,17 L36,17 L36,19 L14,19 L14,17 Z" id="icon_menu"></path>
             </g>

@@ -4,13 +4,20 @@
 /* footer
 /* -------------------------------------------------------------- */
 .l-footer {
-  background-color: #fff;
-  text-align: center;
+  width: 100%;
   padding: 12px 0;
+  background-color: #fff;
   &__copy {
     margin: 0;
-    font-size: 12px;
-    letter-spacing: 2px;
+    padding: 0 6px;
+    font-size: 10px;
+    letter-spacing: 1px;
     line-height: 1;
+    text-align: right;
+    @media #{$medium-up} {
+      padding: 0 20px;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
   }
 }
