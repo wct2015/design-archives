@@ -22,6 +22,8 @@ gulp.task('default', [
   'jade',
   'sass',
   'bundle:js',
+  'sprite',
+  'sprite:svg',
   'watch',
   'browserSync'
 ]);
