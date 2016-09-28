@@ -3,3 +3,30 @@
 /* -------------------------------------------------------------- */
 /* buttons
 /* -------------------------------------------------------------- */
+%btnBase {
+  display: inline-block;
+  text-align: center;
+  padding: 0.8rem 1.1rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+@mixin btnHollow($color, $radius: false) {
+  color: $color;
+  border: 1px solid $color;
+  background-color: transparent;
+  @if $radius  {
+    border-radius: 4px;
+  }
+}
+
+.m-btn {
+  @extend %btnBase;
+}
+
+.m-btn-hollow {
+  @extend %btnBase;
+  &--white {
+    @include btnHollow(#fff);
+  }
+}

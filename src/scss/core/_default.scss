@@ -47,13 +47,12 @@ a {
   }
   &:link,
   &:visited {
-    color: $colorLink;
+    color: lighten($colorLink, 5%);
   }
   &:hover,
   &:active,
   &:focus {
     outline: 0;
-    color: $colorLinkHover;
     text-decoration: none;
   }
 }
