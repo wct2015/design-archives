@@ -127,4 +127,9 @@ button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 }

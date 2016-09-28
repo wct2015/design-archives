@@ -80,12 +80,27 @@
       width: 100%;
       height: 2px;
       background-color: #fff;
+      transition: all 0.3s;
+      transition-duration: 0.3s 0.3s;
     }
     &:before {
       top: -6px;
+      transition-property: top, transform;
     }
     &:after {
       top: 6px;
+      transition-property: bottom, transform;
+    }
+    &--is-open {
+      height: 0;
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
     }
     @media #{$large-up} {
       background-color: $colorGray;

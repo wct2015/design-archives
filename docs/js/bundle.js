@@ -10237,9 +10237,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _jquery2.default)(function () {
 
   var $button = (0, _jquery2.default)('.l-nav__toggle');
+  var $icon = (0, _jquery2.default)('.l-nav__icon');
   var $menu = (0, _jquery2.default)('.l-nav__list');
 
   $button.on('click', function () {
+    $icon.toggleClass('l-nav__icon--is-open');
     $menu.slideToggle();
   });
 });
