@@ -4,14 +4,6 @@
 /* repos
 /* -------------------------------------------------------------- */
 .s-repos {
-  @media #{$small-only} {
-    padding: 0 vmin-calc(15px);
-  }
-  @media #{$medium-up} {
-    width: 100%;
-    max-width: $contentWidth;
-    margin: 0 auto;
-  }
   &__list {
     display: flex;
     flex-wrap: wrap;

@@ -4,13 +4,9 @@
 /* hero
 /* -------------------------------------------------------------- */
 .s-site-brand {
-  padding: 0 vmin-calc(15px);
   padding-top: vmin-calc(100px);
-  padding-bottom: vmin-calc(108px);
+  padding-bottom: vmin-calc(80px);
   @media #{$medium-up} {
-    width: 100%;
-    max-width: $contentWidth;
-    margin: 0 auto;
     padding: 0;
     padding-top: 128px;
     padding-bottom: 146px;

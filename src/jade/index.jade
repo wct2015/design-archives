@@ -13,24 +13,26 @@ block append meta
 block body
   .l-container
     .l-container__bar(role='presentation')
-    .l-container__main(role='main')
+    .l-container__body(role='main')
       include inc/layouts/_header
-      .s-site-brand
-        h1.s-site-brand__title
-          svg(viewBox='0 0 180 96')
-            use(xlink:href='/docs/images/sprite.symbol.svg#logo')
-      .m-sns-share  
-        ul.m-sns-share__list
-          li
-            a(href='')
-              svg(viewBox='0 0 40 40', width='40px', height='40px')
-                use(xlink:href='/docs/images/sprite.symbol.svg#icon_tw')
-          li
-            a(href='')
-              svg(viewBox='0 0 40 40', width='40px', height='40px')
-                use(xlink:href='/docs/images/sprite.symbol.svg#icon_fb')
-      include inc/modules/_repos
+      .l-main
+        .s-site-brand
+          h1.s-site-brand__title
+            svg(viewBox='0 0 180 96')
+              use(xlink:href='/docs/images/sprite.symbol.svg#logo')
+        .m-sns-share  
+          ul.m-sns-share__list
+            li
+              a(href='')
+                svg(viewBox='0 0 40 40', width='40px', height='40px')
+                  use(xlink:href='/docs/images/sprite.symbol.svg#icon_tw')
+            li
+              a(href='')
+                svg(viewBox='0 0 40 40', width='40px', height='40px')
+                  use(xlink:href='/docs/images/sprite.symbol.svg#icon_fb')
+        include inc/modules/_repos
+      //- / .l-main
       include inc/layouts/_footer
-    //- / .l-container__main
+    //- / .l-container__body
   //- / .l-container
 block append scriptFooter
