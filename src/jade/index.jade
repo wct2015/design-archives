@@ -15,11 +15,12 @@ block body
     .l-container__bar(role='presentation')
     .l-container__main(role='main')
       include inc/layouts/_header
-      .s-hero
-        h1.s-hero__title
+      .s-site-brand
+        h1.s-site-brand__title
           svg(viewBox='0 0 180 96')
             use(xlink:href='/docs/images/sprite.symbol.svg#logo')
-        ul.s-hero__list
+      .m-sns-share  
+        ul.m-sns-share__list
           li
             a(href='')
               svg(viewBox='0 0 40 40', width='40px', height='40px')

@@ -13,19 +13,16 @@
 .m-menu-toggle {
   display: block;
   position: fixed;
-  right: 0;
+  right: 15px;
   bottom: 15px;
   z-index: 999;
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  background-color: rgba(11,52,110,.9); // same as $colorDeepBlue @see _config.scss
-  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  background-color: $colorGold;
+  box-shadow: $buttonShadow;
   border-radius: 25px;
   text-align: center;
-  @media #{$small-only} {
-    left: 0;
-  }
   @media #{$large-up} {
     position: absolute;
     top: 16px;
