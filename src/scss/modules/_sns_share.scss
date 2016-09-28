@@ -25,6 +25,9 @@
         height: 40px;
         border-radius: 20px;
         box-shadow: $buttonShadow;
+        svg {
+          fill: $colorBlack;
+        }
       }
     }
   }
