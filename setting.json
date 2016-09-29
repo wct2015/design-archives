@@ -1,11 +1,13 @@
 {
-  "name": "site name",
-  "url": "https://github.com/featherplain/",
+  "name": "WordCamp Tokyo 2015 Design Archives",
+  "url": {
+    "github": "https://github.com/wct2015",
+    "wct2015": "https://2015.tokyo.wordcamp.org/"
+    },
   "page":{
     "top":{
-      "title": "example",
-      "description": "this is an exmaple.",
-      "keywords": "exmaple, gulp, grunt, html, css",
+      "title": "WordCamp Tokyo 2015 Design Archives",
+      "description": "This is just another GitHub repository lust of the organization.",
       "ogpimage":""
     }
   }

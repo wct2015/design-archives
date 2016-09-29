@@ -1,0 +1,50 @@
+include inc/core/_config
+include inc/core/_mixins
+extends inc/core/_base
+block title
+  title= page.top.title
+block prepend meta
+  - var sitename = name
+  - var keywords = page.top.keywords
+  - var description = page.top.description
+  - var ogpimage = page.top.ogpimage
+  - var bodyClass = 'page'
+block append meta
+block body
+  .l-container
+    .l-container__bar(role='presentation')
+    .l-container__body(role='main')
+      include inc/layouts/_header
+      .l-main
+        h1.s-page-title ABOUT
+        p.s-page-titile__description このサイトについて
+        .l-content
+          p 
+            a(href='#{url.wct2015}', target='_blank') WordCamp Tokyo 2015
+            | のために制作された様々なデータを GitHub 上で公開し、多くの人と共有できるように GitHub リポジトリの一覧ページを作りました。
+          p
+            | GitHub リポジトリの一覧は 
+            a(href='#{url.github}', target='_blank') #{url.github} 
+            | にアクセスするとご覧いただけます。
+          h2 WordCamp
+          p オープンソース・ソフトウェアである WordPress は世界中のコミュニティによって支えられています。日本でも地域ごとにコミュニティがたくさんあり、WordPress の情報交換や勉強会が積極的に行われています。これらはボランティアメンバーによって運営されています。そのコミュニティの中でも WordCamp は、WordPress Foundation の公式な承認のもとに世界中で開かれている WordPress のイベントです。
+          h2 Credit
+          p この GitHub Page で公開している様々なデータは、WordCamp Tokyo 2015のデザインチームのメンバーによってデザインされました。
+          dl
+            dt Member
+            - each val in ['嵩本 康志', 'アカイケ ナツミーヌ', '濱野 将', '油 寿一']
+              dd= val
+          h2 License
+          p GitHub 上で公開されているデザインデータは全て WordPress のライセンスである GPLv2 またはそれ以降のバージョンが適用されます。
+          dl
+            dt WordPress のライセンスについて
+            dd
+              a(href='https://ja.wordpress.org/gpl/', _target='_blank') WordPress のライセンス – GNU General Public License –
+            dd
+              a(href='https://wordpress.org/about/gpl/', _target='_blank') GNU General Public License
+        //- / .l-content
+      //- / .l-main
+      include inc/layouts/_footer
+    //- / .l-container__body
+  //- / .l-container
+block append scriptFooter
