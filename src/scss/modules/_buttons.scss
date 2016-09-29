@@ -19,14 +19,88 @@
     border-radius: 4px;
   }
 }
-
+/**
+ * m-btn
+ */
 .m-btn {
   @extend %btnBase;
 }
-
+/**
+ * m-btn-hollow
+ */
 .m-btn-hollow {
   @extend %btnBase;
   &--white {
     @include btnHollow(#fff);
+  }
+}
+/**
+ * m-btn-menu-toggle
+ */
+.m-btn-menu-toggle {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  background-color: $colorBlack;
+  box-shadow: $buttonShadow;
+  border-radius: 25px;
+  margin: 0;
+  text-align: center;
+  @media #{$large-up} {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    border-right: 0;
+    box-shadow: none;
+  }
+  &__icon {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #fff;
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.3s;
+      transition-duration: 0.3s 0.3s;
+    }
+    &:before {
+      top: -6px;
+      transition-property: top, transform;
+    }
+    &:after {
+      top: 6px;
+      transition-property: bottom, transform;
+    }
+    &--is-open {
+      height: 0;
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &:after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+    @media #{$large-up} {
+      background-color: $colorGray;
+      &:before,
+      &:after {
+        background-color: $colorGray;
+      }
+    }
   }
 }

@@ -1,8 +1,8 @@
 header.l-header
   p.l-header__description THIS IS JUST ANOTHER GITHUB REPOSITORY LIST OF THE ORGANIZATION
-  nav.l-nav
-    button.l-nav__toggle(type='button')
-      span.l-nav__icon
+  button.m-btn-menu-toggle(type='button', class='js-menu-toggle')
+    span.m-btn-menu-toggle__icon.js-menu-icon
+  nav.l-nav(role='navigation', class='js-nav')
     ul.l-nav__list
       li
         a(href='/about.html') ABOUT
