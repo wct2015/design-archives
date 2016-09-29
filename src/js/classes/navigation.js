@@ -6,7 +6,7 @@ $(() => {
 
   const $button = $('.js-menu-toggle');
   const $icon   = $('.js-menu-icon');
-  const $nav   = $('.js-nav');
+  const $nav    = $('.js-nav');
 
   $button.on('click', () => {
     $icon.toggleClass('m-btn-menu-toggle__icon--is-open');
