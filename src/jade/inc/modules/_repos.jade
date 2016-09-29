@@ -2,13 +2,14 @@
   ul.s-repos__list
     - for (var i = 0; i < 10; i++)
       li.s-repos__item
-        a(href='')
-          .s-repos__thumb
-            img(src='/docs/images/img_folder.png')
-          .s-repos__content
-            p.s-repos__name FOLDER
-            p.s-repos__description クリアファイル
-            p.s-repos__date Updated at 2016-09-12
-          .s-repos__overlay
-            p.s-repos__text.s-repos__text--ja リポジトリをみる
-            p.s-repos__text.s-repos__text--en VIEW ON GITHUB
+        .s-repo
+          a(href='')
+            .s-repo__thumb
+              img(src='/docs/images/img_folder.png')
+            .s-repo__content
+              p.s-repo__name FOLDER
+              p.s-repo__description クリアファイル
+              p.s-repo__date Updated at 2016-09-12
+            .s-repo__overlay
+              p.s-repo__text.s-repo__text--ja リポジトリをみる
+              p.s-repo__text.s-repo__text--en VIEW ON GITHUB

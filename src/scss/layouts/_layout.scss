@@ -45,16 +45,13 @@
  * l-main
  */
 .l-main {
-  @media #{$small-only} {
-    padding: 0 vmin-calc(15px);
-  }
+  padding: 0 vmin-calc(15px);
   @media #{$medium-up} {
     width: 100%;
     max-width: $contentWidth;
     margin: 0 auto;
-
   }
   @media #{$large-up} {
-
+    padding: 0;
   }
 }
