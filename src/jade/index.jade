@@ -18,18 +18,15 @@ block body
       .l-main
         .s-site-brand
           h1.s-site-brand__title
-            svg(viewBox='0 0 180 96')
-              use(xlink:href='/docs/images/sprite.symbol.svg#logo')
+            img(src='/docs/images/logo.svg')
         .m-sns-share  
           ul.m-sns-share__list
             li
               a(href='')
-                svg(viewBox='0 0 40 40', width='40px', height='40px')
-                  use(xlink:href='/docs/images/sprite.symbol.svg#icon_tw')
+                img(src='/docs/images/icon_fb.svg')
             li
               a(href='')
-                svg(viewBox='0 0 40 40', width='40px', height='40px')
-                  use(xlink:href='/docs/images/sprite.symbol.svg#icon_fb')
+                img(src='/docs/images/icon_tw.svg')
         include inc/modules/_repos
       //- / .l-main
       include inc/layouts/_footer
