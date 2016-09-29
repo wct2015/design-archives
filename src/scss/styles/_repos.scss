@@ -23,7 +23,7 @@
 
 .s-repo {
   position: relative;
-  background-color: rgba(255,255,255,.5);
+  background-color: $colorTransWhite;
   box-shadow: $boxShadow;
   height: vmin-calc(267px);
   @media #{$large-up} {
@@ -129,7 +129,7 @@
       float: right;
       padding-top: vmin-calc(15px);
       padding-right: vmin-calc(5px);
-      font-family: serif;
+      font-family: $fontSerif;
       font-size: vmin-calc(12px);
       letter-spacing: 1px;
       writing-mode: vertical-rl;
