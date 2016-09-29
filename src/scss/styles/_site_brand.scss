@@ -4,8 +4,8 @@
 /* hero
 /* -------------------------------------------------------------- */
 .s-site-brand {
-  padding-top: vmin-calc(100px);
-  padding-bottom: vmin-calc(80px);
+  padding-top: vmin-calc(64px);
+  padding-bottom: vmin-calc(40px);
   @media #{$medium-up} {
     padding: 0;
     padding-top: 128px;
@@ -19,7 +19,7 @@
       margin-bottom: 0;
     }
     svg {
-      width: vmin-calc(180px);
+      width: vmin-calc(150px);
       height: auto;
       @media #{$medium-up} {
         width: 300px;
