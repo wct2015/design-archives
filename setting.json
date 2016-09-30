@@ -12,6 +12,7 @@
     }
   },
   "path": {
-    "images": "images"
+    "root" : "./",
+    "images": "./images"
   }
 }
