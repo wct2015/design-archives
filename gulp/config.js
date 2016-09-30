@@ -4,7 +4,7 @@
 // File destination
 //---------------------------------------------------------------------------
 export const paths = {
-  'root'           : './',
+  'root'           : 'docs/',
 // html
   'htmlDest'       : 'docs/',
 // images

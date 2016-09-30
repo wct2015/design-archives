@@ -12,7 +12,7 @@
     }
   },
   "path": {
-    "images": "/docs/images",
-    "root": "/docs"
+    "images": "/images",
+    "root": "/"
   }
 }

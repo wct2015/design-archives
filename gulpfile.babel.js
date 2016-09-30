@@ -52,7 +52,7 @@ gulp.task('browserSync', () => {
 
   if (argv.mode == 'server' ) {
     args.server =  { baseDir: paths.root };
-    args.startPath = paths.htmlDest;
+    args.startPath = paths.docs;
   } else {
     args.proxy =  paths.vhost;
     args.open = 'external';
