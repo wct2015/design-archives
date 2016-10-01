@@ -88,12 +88,13 @@
     }
   }
   &__name {
+    margin-top: 0;
+    margin-bottom: vmin-calc(8px);
     font-weight: 600;
     letter-spacing: 0.67px;
     line-height: 1.1;
     font-size: vmin-calc(12px);
-    margin-top: 0;
-    margin-bottom: vmin-calc(8px);
+    text-transform: uppercase;
     @media #{$large-up} {
       margin-bottom: 14px;
       font-size: 18px;

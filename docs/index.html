@@ -39,11 +39,10 @@
           </div>
           <div class="s-repos">
             <repos></repos>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
             <script src="./tags/repos.tag" type="riot/tag"></script>
             <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
-            <script>
-              riot.mount('*')
-            </script>
+            <script>riot.mount('repos')</script>
           </div>
         </div>
         <footer class="l-footer">
