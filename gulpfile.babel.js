@@ -63,4 +63,5 @@ gulp.task('browserSync', () => {
   gulp.watch([paths.jadePath  + '**/*.jade'], { interval: 500 }, ['jade:bs']);
   gulp.watch([paths.jsPath    + '*.js'], { interval: 500 }, ['bundlejs:bs']);
   gulp.watch([paths.htmlDest  + '*.html'], {interbal: 500}).on('change', browserSync.reload);
+  gulp.watch([paths.tagPath   + '*.tag'], {interbal: 500}).on('change', browserSync.reload);
 })

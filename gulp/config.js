@@ -15,6 +15,8 @@ export const paths = {
 // JavaScript
   'jsPath'         : 'src/js/',
   'jsDest'         : 'docs/js/',
+// tags
+  'tagPath'        : 'docs/tags',
 // scss
   'scssPath'       : 'src/scss/',
 // css
