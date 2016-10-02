@@ -68,8 +68,11 @@
     }
   }
   &__thumb {
+    display: flex;
+    align-items: center;
     padding: vmin-calc(36px) 0 vmin-calc(38px) 0;
     @media #{$large-up} {
+      height: 354px;
       padding: 50px 0;
     }
     img {

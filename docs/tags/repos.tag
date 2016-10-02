@@ -4,7 +4,9 @@
     <li each={ repos_list } class="s-repos__item">
       <div class="s-repo">
         <a href="{ html_url }">
-          <div class="s-repo__thumb"><img src="./images/repos/img_folder.png"></div>
+          <div class="s-repo__thumb">
+            <img src="./images/repos/img_{ name }.png">
+          </div>
           <div class="s-repo__content">
             <p class="s-repo__name">{ name }</p>
             <p class="s-repo__description">{ description }</p>
@@ -22,6 +24,7 @@
   <script>
 
     var self = this
+
     self.repos_list = [];
 
     fetch('https://api.github.com/users/wct2015/repos')
@@ -31,6 +34,7 @@
       .then(function (data) {
         self.repos_list = data;
         self.update();
+
       })
 
   </script>
