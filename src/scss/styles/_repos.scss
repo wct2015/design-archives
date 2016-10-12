@@ -8,15 +8,19 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 0;
     counter-reset: number;
   }
   &__item {
     width: 48%;
     margin-bottom: vmin-calc(30px);
+    padding-left: vmin-calc(8px);
+    padding-right: vmin-calc(8px);
     @media #{$medium-up} {
       width: 32%;
+      padding-left: 10px;
+      padding-right: 10px;
       margin-bottom: 40px;
     }
   }
