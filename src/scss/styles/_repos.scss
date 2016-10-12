@@ -4,6 +4,7 @@
 /* repos
 /* -------------------------------------------------------------- */
 .s-repos {
+  min-height: 60vh;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +19,33 @@
       width: 32%;
       margin-bottom: 40px;
     }
+  }
+  &__message {
+    position: relative;
+    text-align: center;
+    color: $colorGray;
+    &--loading {
+      padding-top: 58px;
+      &:before {
+        @include fa($content: '\f1ce', $fontsize: 48px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        color: $colorGray;
+        animation: fa-spin 2s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
   }
 }
 

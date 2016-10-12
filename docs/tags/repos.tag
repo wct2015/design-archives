@@ -1,6 +1,10 @@
 <repos>
 
-  <ul class="s-repos__list">
+  <p if={ isLoading } class="s-repos__message s-repos__message--loading">Loading...</p>
+
+  <p if={ error } class="s-repos__message">Sorry, There is something error within GitHub or network.</p>
+
+  <ul if={ repos_list.length } class="s-repos__list">
     <li each={ repos_list } class="s-repos__item">
       <div class="s-repo">
         <a href="{ html_url }">
@@ -25,17 +29,23 @@
 
     var self = this
 
-    self.repos_list = [];
+    self.isLoading = []
 
     fetch('https://api.github.com/users/wct2015/repos')
-      .then(function (result) {
-        return result.json()
-      })
-      .then(function (data) {
-        self.repos_list = data;
-        self.update();
+    .then(function (result) {
+      return result.json()
+    })
+    .then(function (data) {
 
-      })
+      if (data.length) {
+        self.repos_list = data
+      } else self.error = true
+
+      self.isLoading = false
+      self.update()
+      // checkImage()
+    })
+
 
   </script>
 
