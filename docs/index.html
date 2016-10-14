@@ -31,12 +31,8 @@
               <li><a href="https://github.com/wct2015/design-archives">VIEW ON GITHUB</a></li>
             </ul>
           </nav>
-          <div class="m-sns-share"> 
-            <ul class="m-sns-share__list">
-              <li><a href=""><img src="./images/global/icon_fb.svg"></a></li>
-              <li><a href=""><img src="./images/global/icon_tw.svg"></a></li>
-            </ul>
-          </div>
+          <sns-share></sns-share>
+          <script src="./tags/sns-share.tag" type="riot/tag"></script>
         </header>
         <div class="l-main">
           <div class="s-site-brand">
@@ -47,7 +43,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
             <script src="./tags/repos.tag" type="riot/tag"></script>
             <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
-            <script>riot.mount('repos')</script>
+            <script>riot.mount('*')</script>
           </div>
         </div>
         <footer class="l-footer">
