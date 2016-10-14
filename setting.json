@@ -1,6 +1,7 @@
 {
   "name": "WordCamp Tokyo 2015 Design Archives",
   "url": {
+    "site": "https://wct2015.github.io/design-archives/",
     "github": "https://github.com/wct2015",
     "wct2015": "https://2015.tokyo.wordcamp.org/"
     },
@@ -8,7 +9,7 @@
     "top": {
       "title": "WordCamp Tokyo 2015 Design Archives",
       "description": "This is just another GitHub repository lust of the organization.",
-      "ogpimage":""
+      "ogpimage": "./img_ogp.png"
     }
   },
   "path": {
