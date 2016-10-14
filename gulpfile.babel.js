@@ -14,7 +14,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import cssGlobbing from 'gulp-css-globbing';
 import sourcemaps from 'gulp-sourcemaps';
 
-import './gulp/jade';
+// import './gulp/jade';
 import './gulp/bundlejs';
 import './gulp/tasks';
 
@@ -38,10 +38,10 @@ gulp.task('sass', () => {
 //---------------------------------------------------------------------------
 // BrowserSync
 //---------------------------------------------------------------------------
-gulp.task('jade:bs', ['jade'], () => {
-  browserSync.reload();
-  return;
-});
+// gulp.task('jade:bs', ['jade'], () => {
+//   browserSync.reload();
+//   return;
+// });
 gulp.task('bundlejs:bs', ['bundle:js'], () => {
   browserSync.reload();
   return;
@@ -60,7 +60,8 @@ gulp.task('browserSync', () => {
 
   browserSync.init(args);
 
-  gulp.watch([paths.jadePath  + '**/*.jade'], { interval: 500 }, ['jade:bs']);
+  // gulp.watch([paths.jadePath  + '**/*.jade'], { interval: 500 }, ['jade:bs']);
   gulp.watch([paths.jsPath    + '*.js'], { interval: 500 }, ['bundlejs:bs']);
   gulp.watch([paths.htmlDest  + '*.html'], {interbal: 500}).on('change', browserSync.reload);
+  gulp.watch([paths.tagPath   + '*.tag'], {interbal: 500}).on('change', browserSync.reload);
 })
