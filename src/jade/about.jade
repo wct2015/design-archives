@@ -9,6 +9,7 @@ block prepend meta
   - var description = page.top.description
   - var ogpimage = page.top.ogpimage
   - var bodyClass = 'page'
+  - var pageTitleJa = 'このサイトについて'
 block append meta
 block body
   .l-container
@@ -19,7 +20,14 @@ block body
         article.l-article
           header.l-article__header
             h1.l-article__title ABOUT
-            p.l-article__description このサイトについて
+            .m-breadclumbs
+              ul.m-breadclumbs__list
+                li
+                  a(href='./', title='Back to Home')
+                    span.fa.fa-home
+                li
+                  span.fa.fa-angle-double-right.m-breadclumbs__arrow
+                li #{pageTitleJa}
           .l-article__content
             .s-content
               p 
