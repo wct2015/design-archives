@@ -9,7 +9,7 @@
     "top": {
       "title": "WordCamp Tokyo 2015 Design Archives",
       "description": "This is just another GitHub repository lust of the organization.",
-      "ogpimage": "./img_ogp.png"
+      "ogpimage": "https://wct2015.github.io/design-archives/img_ogp.png"
     }
   },
   "path": {
