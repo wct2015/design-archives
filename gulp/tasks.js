@@ -11,13 +11,13 @@ import gulp from 'gulp';
 // Tasks
 //---------------------------------------------------------------------------
 gulp.task('watch', () => {
-  // gulp.watch([paths.jadePath  + '**/*.jade'], ['jade']);
+  gulp.watch([paths.jadePath  + '**/*.jade'], ['jade']);
   gulp.watch([paths.jsPath    + '**/*.js'], ['bundle:js']);
   gulp.watch([paths.scssPath  + '**/*.scss'], ['sass']);
 });
 
 gulp.task('default', [
-  // 'jade',
+  'jade',
   'sass',
   'bundle:js',
   'watch',
