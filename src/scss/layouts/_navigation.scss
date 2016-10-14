@@ -5,25 +5,20 @@
 /* -------------------------------------------------------------- */
 .l-nav {
   display: none;
-  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  width: vmin-calc(345px);
   background-color: #fff;
   box-shadow: $boxShadow;
   z-index: 100;
-  @media #{$small-only} {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
-  @media #{$large-up} {
-    position: absolute;
-    width: 260px;
+  @media #{$medium-up} {
     top: 60px;
-    right: 0;
-    li {
-      &:last-child {
-        border-bottom: none;
-      }
+    width: 260px;
+  }
+  li {
+    &:last-child {
+      border-bottom: none;
     }
   }
   &__title {
@@ -31,15 +26,10 @@
     font-size: 12px;
     letter-spacing: 1px;
   }
-
   &__list {
     margin: 0;
     padding-left: 0;
-    padding-bottom: 80px;
     z-index: 100;
-    @media #{$large-up} {
-      padding-bottom: 0;
-    }
     li {
       border-bottom: 1px dashed $colorGrayLight;
       a {
