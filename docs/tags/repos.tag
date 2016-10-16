@@ -43,7 +43,10 @@
 
       self.isLoading = false
       self.update()
-    })
+
+    }).catch(function(err) {
+      self.error = true
+    });
 
   </script>
 
