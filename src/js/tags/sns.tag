@@ -1,4 +1,4 @@
-<sns-share>
+<sns>
 
   <div class="m-sns-share">
     <ul class="m-sns-share__list">
@@ -39,4 +39,4 @@
 
   </script>
 
-</sns-share>
+</sns>

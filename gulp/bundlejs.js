@@ -6,6 +6,7 @@
 import { paths } from './config';
 
 import browserify from 'browserify';
+import riotify from 'riotify';
 import babelify from 'babelify';
 import source from 'vinyl-source-stream';
 
@@ -19,6 +20,7 @@ gulp.task('bundle:js', () => {
     entries: './src/js/app.js',
     extensions: ['.js']
   })
+  .transform(riotify)
   .transform(babelify)
   .bundle()
   .on("error", function (err) {
