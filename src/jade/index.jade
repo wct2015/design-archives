@@ -19,16 +19,11 @@ block body
         .s-site-brand
           h1.s-site-brand__title
             img(src='./images/global/logo.svg')
-        .s-repos
-          repos
-          script(src='https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js')
-          script(src='./tags/repos.tag', type='riot/tag')
-          script(src='https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js')
-          script
-            | riot.mount('*')
-      //- / .l-main
+        
+        repos
+      // / .l-main
 
       include inc/layouts/_footer
-    //- / .l-container__body
-  //- / .l-container
+    // / .l-container__body
+  // / .l-container
 block append scriptFooter

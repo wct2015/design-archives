@@ -12,7 +12,7 @@ import gulp from 'gulp';
 //---------------------------------------------------------------------------
 gulp.task('watch', () => {
   gulp.watch([paths.jadePath  + '**/*.jade'], ['jade']);
-  gulp.watch([paths.jsPath    + '**/*.js'], ['bundle:js']);
+  gulp.watch([paths.jsPath    + '**/*.*'], ['bundle:js']);
   gulp.watch([paths.scssPath  + '**/*.scss'], ['sass']);
 });
 

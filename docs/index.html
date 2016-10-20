@@ -31,27 +31,23 @@
               <li><a href="https://github.com/wct2015/design-archives">VIEW ON GITHUB</a></li>
             </ul>
           </nav>
-          <sns-share></sns-share>
-          <script src="./tags/sns-share.tag" type="riot/tag"></script>
+          <sns></sns>
         </header>
         <div class="l-main">
           <div class="s-site-brand">
             <h1 class="s-site-brand__title"><img src="./images/global/logo.svg"></h1>
           </div>
-          <div class="s-repos">
-            <repos></repos>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.js"></script>
-            <script src="./tags/repos.tag" type="riot/tag"></script>
-            <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
-            <script>riot.mount('*')</script>
-          </div>
+          <repos></repos>
         </div>
+        <!-- / .l-main-->
         <footer class="l-footer">
           <p class="l-footer__credit"><span class="fa fa-pencil"></span> with <span class="fa fa-heart"></span> by <a href="https://github.com/featherplain/">featherplain</a></p>
           <p class="l-footer__copy">&copy; 2015 WORDCAMP TOKYO</p>
         </footer>
       </div>
+      <!-- / .l-container__body-->
     </div>
+    <!-- / .l-container-->
     <script src="./js/bundle.js"></script>
   </body>
 </html>
